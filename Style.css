@@ -1,0 +1,544 @@
+/* Resetting everything*/
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { 
+    font-family: 'Georgia', serif; 
+    line-height: 1.6; 
+    color: #333; 
+    background-color: #f9f5eb; 
+}
+
+/* Navigation section for all pages*/
+header { 
+    background-color: #c0a867; 
+    padding: 1rem 0; 
+    position: sticky; 
+    top: 0; 
+    z-index: 100; 
+}
+.Navigation{ 
+    display: flex; 
+    justify-content: center; 
+    list-style: none; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+.Navigation li, .Navigationn li { 
+    margin: 0 15px; 
+}
+.Navigation a, .Navigationn a { 
+    color: white; 
+    text-decoration: none; 
+    padding: 8px 15px; 
+    border-radius: 4px;  
+}
+.Navigation a:hover, .Navigationn a:hover { 
+    background-color: #a8925a; 
+}
+
+/* Toggle Button */
+/* ===== DARK MODE STYLES ===== */
+body.dark_mode {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+/* Header */
+body.dark_mode .Home_header,
+body.dark_mode .About_header,
+body.dark_mode .History_header,
+body.dark_mode .Tradition_header,
+body.dark_mode .TimeLine_head{
+    background-color:#2d2d2d;
+}
+
+/* Navigation words */
+body.dark_mode .Navigation a {
+    color: #e0e0e0;
+}
+/* hovering over the navigation button */
+body.dark_mode .Navigation a:hover {
+    background-color: #555;
+}
+
+/* Content and Heading Style for dark mode*/
+body.dark_mode .Introduction,
+body.dark_mode .Image_details,
+body.dark_mode .HomeImage_content,
+body.dark_mode .MainHome_image,
+body.dark_mode .Main_Link,
+body.dark_mode .About_introduction,
+body.dark_mode .History_Factors,
+body.dark_mode .Art,
+body.dark_mode .culture,
+body.dark_ode .Writing,
+body.dark_mode .Footer {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+}
+body.dark_mode .Image_details,
+body.dark_mode .HomeImage_content,
+body.dark_mode .MainHome_image,
+body.dark_mode .About_content,
+body.dark_mode .About_Content2,
+body.dark_mode .About_Content3,
+body.dark_mode .li1,
+body.dark_mode .li2,
+body.dark_mode .li3,
+body.dark_mode .Art div,
+body.dark_mode .culture li,
+body.dark_mode .culture strong,
+ body.dark_mode .Timeline_header {
+    background-color: #3a3a3a;
+    color: #e0e0e0;
+    border-left-color: #d4b95c;
+}
+
+/* Headings for dark mdoe */
+body.dark_mode h1,
+body.dark_mode h2,
+body.dark_mode h3 {
+    color: #d4b95c;
+}
+
+header.dark_mode .Main_Link{
+    background-color: #555;
+}
+/* Button Styles */
+.LightBtn {
+    background: #6b675b;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Georgia', serif;
+    font-size: 14px;
+}
+
+.LightBtn:hover {
+    background: #d4b95c;
+}
+
+
+
+/*  HOME WEBPAGE SECTION */
+.Introduction, .MainHome_image { 
+    padding: 20px 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    display: flex;
+   
+}
+.Introduction { 
+    background-color: white; 
+}
+.MainHome_image { 
+    background-color: #f5f5f5;
+}
+.Intro_content, .HomeImage_content { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+.Intro_Details h1, .Image_details h2 { 
+    font-size: 2.7rem; 
+    color: black; 
+    margin: 0 0 20px; 
+    font-weight: 300;  
+    text-align: center; 
+    text-transform: uppercase; 
+    letter-spacing: 3px; 
+}
+.Home_image img{
+    max-width: 100%; 
+    height: 250px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    margin-left: 100px;
+}
+
+.HomeImage_content img { 
+    max-width: 100%; 
+    height: 250px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    margin-left: 10px;
+}
+
+.Image_details p{
+    text-align: right;
+}
+.Home_footer { 
+    background-color: #c0a867; 
+    color: white; 
+    padding: 30px 20px; 
+    text-align: center; 
+}
+
+/* ABOUT WEBPAGE SECTION */
+.About_introduction { 
+    padding: 60px 20px; 
+    background-color: white; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+.About_h2{
+     font-size: 2.7rem; 
+    color: black; 
+    margin: 0 0 20px; 
+    font-weight: 300;  
+    text-align: center; 
+    text-transform: uppercase; 
+    letter-spacing: 3px; 
+}
+.About_content { 
+    text-align: center; 
+    margin-bottom: 50px; 
+    padding: 40px; 
+    background-color: white; 
+    border-radius: 8px; 
+     border-radius: 8px; 
+    margin-bottom: 10px; 
+    border-top: 4px solid #735e26; 
+    border-left: 4px solid #735e26;
+    border-right: 4px solid #735e26;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+.About_content h3 { 
+    text-align: center; 
+    font-size: 1.5rem; 
+    color: #706244; 
+    margin-bottom: 20px; 
+    
+    
+}
+.About_Content2 { 
+    text-align: center; 
+    background-color: white; 
+    padding: 40px; 
+    border-radius: 8px; 
+    margin-bottom: 10px; 
+    border-left: 4px solid #735e26;
+    border-right: 4px solid #735e26;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+.About_Content3{
+    text-align: center; 
+    background-color: white; 
+    padding: 40px; 
+    border-radius: 8px; 
+    margin-bottom: 10px;  
+      border-left: 4px solid #735e26;
+    border-right: 4px solid #735e26;
+    border-bottom: 4px solid #735e26; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.About_Content2 h3, .About_Content3 h3 { 
+    color: #695222; 
+    margin-bottom: 20px; 
+    font-size: 1.5rem; 
+}
+.About_Content3 img { 
+    max-width: 60%; 
+    height: auto; 
+    border-radius: 8px; 
+    margin-top: 20px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+/*  HISTORY WEBPAGE SECTION */
+.History_Factors { 
+    padding: 60px 20px; 
+    background-color: white; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+.History_h1 { 
+    font-size: 2.5rem; 
+    color: black; 
+    margin-bottom: 40px; 
+    text-align: center; 
+    font-weight: 400; 
+    text-transform: uppercase; 
+    letter-spacing: 3px;
+}
+.list { 
+    list-style: none; 
+}
+.li1 { 
+    background-color: white; 
+    padding: 25px; 
+    margin-bottom: 25px; 
+    border-radius: 8px; 
+    border-top: 4px solid #c0a867; 
+    border-left: 4px solid #c0a867; 
+    border-right: 4px solid #c0a867; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+.li2{
+background-color: white; 
+    padding: 25px; 
+    margin-bottom: 25px; 
+    border-radius: 8px; 
+    border-left: 4px solid #c0a867; 
+    border-right: 4px solid #c0a867; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+.li3{
+background-color: white; 
+    padding: 25px; 
+    margin-bottom: 25px; 
+    border-radius: 8px; 
+    border-left: 4px solid #c0a867; 
+    border-right: 4px solid #c0a867;
+    border-bottom: 4px solid #c0a867; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+.History-Factors li strong { 
+    font-size: 1.5rem; 
+    color: #706244; 
+    display: block; 
+    margin-bottom: 15px; 
+}
+.Art { 
+    padding: 10px 10px; 
+    background-color: white; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+.Art h2 { 
+    font-size: 2.5rem; 
+    color: black; 
+    margin-bottom: 40px; 
+    text-align: center; 
+    font-weight: 400; 
+    text-transform: uppercase; 
+    letter-spacing: 3px;
+}
+.Art div { 
+    background-color: white; 
+    text-align: center;
+    padding: 30px; 
+    margin-bottom: 40px; 
+    border-radius: 8px; 
+    border: 4px solid #c0a867;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+.Art h3 { 
+    font-size: 1.6rem; 
+    text-align: center;
+    color: #706244; 
+    
+    margin-top:20px; 
+    padding-bottom: 10px; 
+}
+.Art img { 
+    max-width: 50%; 
+    height: auto; 
+    border-radius: 8px; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+/* TRADITION WEBPAGE SECTION */
+.culture { 
+    padding: 60px 20px; 
+    background-color: #fefefe; 
+    max-width: 1200px; 
+    margin: 0 auto 60px; 
+}
+.culture h2 { 
+    font-size: 2.5rem; 
+    color: black; 
+    margin-bottom: 40px; 
+    text-align: center; 
+    font-weight: 400; 
+    text-transform: uppercase; 
+    letter-spacing: 3px; 
+}
+.culture ul { 
+    list-style: none;
+    padding: 0; 
+    display: grid; 
+    gap: 30px; 
+    max-width: 900px; 
+    margin:auto;
+   text-align: center;
+}
+.culture li { 
+    background: white; 
+    padding: 0; 
+    border-radius: 8px; 
+    border: 4px solid #c0a867;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+.culture li strong { 
+    display: block; 
+    background: white; 
+    color: #2c3e50; 
+    padding: 10px 20px; 
+    font-size: 1.3rem; 
+    font-weight: 600;   
+    
+    
+}
+.culture p { 
+    padding: 0px 30px;
+    margin-bottom: 10px;
+     margin-top:0 ;
+     margin-bottom: 20px;
+     
+}
+.Writing { 
+    padding: 80px 20px; 
+    background: #fefefe; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    border-top: 1px solid #e8e8e8; 
+}
+.Writing_h2 { 
+    font-size: 2rem; 
+    color: #2c3e50; 
+    margin-top: 70px;
+    margin-bottom: 10px; 
+    text-align: center; 
+    font-weight: 400; 
+    text-transform: uppercase; 
+    letter-spacing: 3px; 
+}
+.Writing_p {   
+    margin-top: 0px;
+    margin-bottom: 25px; 
+    max-width: 700px; 
+    margin: auto;
+    text-align: center; 
+    
+}
+
+/* TIMELINE WEBPAGE SECTION*/
+.Timeline_header { 
+    padding: 80px 20px 60px; 
+    min-height: 100vh; 
+    background-color: white;
+}
+.Timeline_header h1 { 
+    font-size: 3.2rem; 
+    color: black; 
+    margin: 0 0 20px; 
+    font-weight: 300; 
+    letter-spacing: 2px; 
+    text-align: center; 
+    text-transform: uppercase; 
+    letter-spacing: 3px; 
+}
+.Timeline_header p { 
+    font-size: 1.3rem; 
+    color: #666; 
+    margin: 0 auto;
+    margin-bottom: 60px;
+    max-width: 600px;  
+    text-align: center; 
+    
+}
+.Timeline_header img { 
+    max-width: 65%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 12px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+    border: 1px solid #e8e8e8; 
+}
+
+/* FOOTER SECTION */
+Footer { 
+    background-color: #c0a867; 
+    color: white; 
+    padding: 30px 20px; 
+    text-align: center; 
+}
+
+/* Other devices */
+@media (max-width: 768px) {
+    .Navigation{ 
+        flex-direction:row;
+        align-items:center; 
+       max-height: fit-content;
+    }
+    .Navigation li{ 
+        margin: 5px 0; 
+    }
+    .Introduction, .MainHome_image, .About_introduction, 
+    .History-Factors, .Art, .culture, .Writing, .Timeline_header { 
+        padding: 40px 15px; 
+    }
+    .About_content, .About_Content2, .About_Content3,
+    .History-Factors li, .Art div, .culture li, .period-card { 
+        padding: 20px; 
+    }
+    h1 { 
+        font-size: 2rem;
+     }
+    .Timeline_header h1 { 
+        font-size: 2.2rem;
+     }
+    h2 { 
+        font-size: 1.8rem; 
+    }
+    h3, .About_Content2 h3, .About_Content3 h3 { 
+        font-size: 1.4rem;
+    }
+    .Art h3 { 
+        font-size: 1.4rem;
+     }
+    .culture h2, .Writing h2 { 
+        font-size: 1.6rem; letter-spacing: 2px;
+     }
+    .culture li strong { 
+        padding: 20px; font-size: 1.1rem; 
+    }
+    .culture p, .Writing p { 
+        padding: 15px 20px; font-size: 1rem;
+     }
+    .Intro_Details {
+        flex-direction: column;
+        display: flex;
+
+    }
+    
+    .HomeImage_content { 
+        flex-direction: column;
+        display: block;
+flex-direction: column;
+    }
+    .HomeImage_content img {
+         max-width: 100%; 
+    }
+    .Intro_content{
+        display: block;
+        gap: 30px;
+        font-size: 0.8rem;
+    }
+    .Image_details p{
+        text-align: center;
+    }
+    .Home_image {
+        display: flex;
+        width: 400px ;
+        height: auto;
+    }
+    
+    .Home_image img {
+        width: 100%;
+        margin: auto;
+        float: right;
+        margin-bottom: 10px;
+        margin-left: 10px;
+
+    }
+    
+}
